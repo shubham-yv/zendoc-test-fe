@@ -1,0 +1,65 @@
+.Side-Effects {
+  margin: 2rem;
+  margin-left: 3rem;
+}
+.Side-Effects-Main-Container {
+  margin-top: 2rem;
+}
+.Side-Effect-H5 {
+  color: #102646;
+  font-weight: bold;
+}
+.Side-Effect-H6 {
+  color: #254069;
+  font-weight: bold;
+}
+.Side-Effect-P {
+  color: 102646;
+  width: 52%;
+}
+.Common-Side-Effects {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.Rare-Side-Effects {
+  margin-bottom: 2rem;
+}
+.Age-Dose-Limit-1 {
+  display: flex;
+  gap: 30px;
+}
+.Age-Dose-Limit-2 {
+    display: flex;
+    gap: 30px;
+  }
+.Age-Dose-Limit-Main {
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .Side-Effect-P {
+    width: 100%;
+  }
+  .Age-Dose-Limit-Main {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .Side-Effect-P {
+      width: 100%;
+      font-size: .8rem;
+    }
+    .Side-Effects{
+        margin-left: 1rem;
+    }
+    .Age-Dose-Limit{
+        font-size: .8rem;
+    }
+    .Side-Effects-Main-Container{
+        margin-top: 1rem;
+    }
+  }
+  

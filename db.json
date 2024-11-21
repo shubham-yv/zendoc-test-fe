@@ -1,0 +1,28 @@
+{
+  "appointments": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "date": "2024-03-11",
+      "time": "10:00 AM",
+      "contact": "123-456-7890",
+      "priority": "High"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "date": "2024-03-12",
+      "time": "11:00 AM",
+      "contact": "456-789-0123",
+      "priority": "Medium"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "date": "2024-03-13",
+      "time": "12:00 PM",
+      "contact": "789-012-3456",
+      "priority": "Low"
+    }
+  ]
+}

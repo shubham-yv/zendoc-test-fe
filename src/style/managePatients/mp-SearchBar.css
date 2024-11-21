@@ -1,0 +1,243 @@
+.mp-search-box-container {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 500px;
+}
+
+.manage-patients {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f5f7;
+}
+
+.mp-searchBar-Parent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: HelveticaNeue;
+}
+
+.mp-seachBar-image {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 100%;
+}
+.mp-pt-searchbar .label-basic {
+  padding: 15px 0 0 15px;
+  padding-right: 0px;
+  color: #4a49af;
+  font-size: 1.5rem;
+}
+
+.mp-search-image {
+  height: 230px;
+  width: 250px;
+  margin-top: 50px;
+  background-image: url(../images/search_page.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.mp-image-labels {
+  display: flex;
+  flex-direction: column;
+  color: #1b54d5;
+}
+
+.label-basic1 {
+  font-size: 34px;
+  color: #1b54d5;
+}
+
+.mp-searchbar-input {
+  width: 60%;
+  background-color: white;
+  position: relative;
+}
+
+.mp-searchbar-input input {
+  height: 50px;
+  background-color: white;
+}
+
+.mp-searchbar-input input::placeholder {
+  color: #a9aca9;
+  font-size: 12px;
+}
+/* button{
+
+} */
+
+.mp-parent-box {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+.form-control {
+  border: none;
+}
+.search-buttons {
+  border: none;
+  border-radius: 6px;
+  background: #d2dff2;
+  color: #1b54d5;
+  height: 50px;
+  width: 100px;
+  position: absolute !important;
+  top: 0px;
+  right: 0px;
+  display: block;
+}
+/* .mp-image-labels label:first-child {
+    /* justify-content: space-evenly;
+    top: 97px;
+    left: 124px;
+    width: 265px;
+    height: 40px;
+    display: flex;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; */
+*/ .mp-image-labels label:first-child {
+  width: 97px;
+  height: 40px;
+  top: 97px;
+  left: 124px;
+  font-family: HelveticaNeue;
+  font-weight: medium;
+  font-size: 45px;
+  text-align: left;
+}
+
+.mp-image-labels label:last-child {
+  justify-content: space-evenly;
+  display: flex;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.mp-patient-detail-back {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #606060;
+}
+.add-patient-button {
+  position: absolute;
+  top: 320px;
+  left: 220px;
+  width: 140px;
+  height: 60px;
+  background-color: #ff9241;
+  border: 1px solid #ff9241;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 18px;
+  cursor: pointer;
+}
+.custom-button {
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  gap: 12px;
+  align-items: center;
+  background-color: #ff9241;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.search-button {
+  margin-left: 810px;
+  top: 100px;
+  left: 1030px;
+  width: 149px;
+  height: 60px;
+}
+
+.mp-searchtop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .search-buttons {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 605px) {
+  .search-buttons {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .custom-button {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    height: 40px;
+    gap: 1px;
+    align-items: center;
+    background-color: #ff9241;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .mp-search-box-container {
+    width: auto;
+  }
+  .mp-image-labels label:last-child {
+    font-size: 0.8rem;
+  }
+  .mp-image-labels {
+    text-align: center;
+  }
+  .mp-seachBar-image {
+    margin-bottom: 1rem;
+  }
+  .mp-search-image {
+    margin-top: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .label-basic1 {
+    font-size: 25px;
+    color: #1b54d5;
+    padding: 10px;
+  }
+  .search-buttons {
+    display: none;
+  }
+  .mp-image-labels label:last-child {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .mp-seachBar-image {
+    margin-top: 0.8rem;
+  }
+}

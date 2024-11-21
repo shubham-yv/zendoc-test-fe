@@ -1,0 +1,69 @@
+.GeneralSettingContainer {
+  background-color: white;
+  height: auto;
+  border-radius: 10px;
+}
+
+.GeneralSetting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.GeneralSettingBTNContainer {
+  display: flex;
+  gap: 1rem;
+  color: #0e57c4;
+}
+.GeneralSettingHead {
+  color: #0e57c4;
+}
+.GeneralSettingBTNContainer > button {
+  background-color: white;
+  border: none;
+  color: #0e57c4;
+}
+.GeneralSettingBTNContainerimg {
+  margin-right: 0.6rem;
+}
+.GeneralSettingFormFields label {
+  color: #102646;
+  opacity: 50%;
+}
+.GeneralHeadingContainer {
+  margin: 1rem;
+}
+.GeneralSettingAccounts {
+  margin: 1rem;
+}
+.AccoutContainer > h5 {
+  color: #0e57c4;
+}
+.setting-google {
+  display: flex;
+  flex-direction: column;
+}
+.AccountContainer {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  justify-content: space-between;
+}
+.setting-text {
+  color: #102646;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .AccountContainer {
+    width: auto;
+  }
+}
+@media screen and (max-width: 525px) {
+  .AccountContainer {
+    width: auto;
+    flex-direction: column;
+  }
+  .GeneralSettingBTNContainerimg {
+    width: 12px;
+  }
+}

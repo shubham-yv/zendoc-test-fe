@@ -1,0 +1,129 @@
+.Blog-Post-Container {
+  background-color: #ffffff;
+  margin: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.blog-sub-feed-container {
+  background-color: #ffffff;
+  margin: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.blog-img-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  /* margin-top: 2rem; */
+}
+.blog-video-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-video-container > img{
+  width: 73%;
+}
+.blog-video-container > iframe{
+  width: 73%;
+}
+.blog-img-container > img {
+  margin-top: 2rem;
+}
+.blog-content {
+  display: inline-block;
+  margin: 2rem 15rem;
+  font-size: 16px;
+  color: #2c2731;
+}
+.blog-Heading {
+  display: inline-block;
+  margin: 2rem 15rem;
+  font-size: 20px;
+  color: #2c2731;
+}
+.blog-img-horizontal-line {
+  border-top: 1px solid #707070;
+  width: auto;
+  margin: auto;
+  color: #1056ba;
+  margin: 0rem 15rem;
+  opacity: 0.5;
+}
+.blog-footer-container {
+  color: #a7a7a7;
+  display: flex;
+  margin: 0rem 15rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog-footer-container-sub {
+  color: #a7a7a7;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .blog-video-container > iframe{
+    width: 60%;
+  }
+  .blog-video-container > img{
+    width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .blog-content {
+    margin: 1rem;
+  }
+  .blog-Heading {
+    margin: 1rem;
+  }
+  .blog-img-container {
+    flex-direction: column;
+  }
+  .blog-img-horizontal-line {
+    margin: 0rem 1rem;
+  }
+  .blog-footer-container {
+    padding: 1rem;
+    margin: 0rem;
+  }
+}
+@media (max-width: 576px) {
+  .blog-img-container > img {
+    height: 174px;
+    margin-top: 1rem;
+  }
+  .blog-video-container > img{
+    width: 95%;
+    height: 174px;
+  }
+  
+  .blog-Heading{
+    margin: 1rem 1rem 0rem 1rem;
+  }
+  .Blog-Post-Container {
+    margin: 1.5rem 0rem;
+  }
+  .blog-sub-feed-container{
+    margin: 1.5rem 0rem;
+  }
+  .blog-content > p {
+    font-size: 0.8rem;
+  }
+  .blog-Heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .blog-footer-container-sub {
+    gap: 1rem;
+  }
+  .blog-footer-container {
+    font-size: 0.6rem;
+  }
+  .blog-Heading {
+    font-size: .9rem;
+  }
+}

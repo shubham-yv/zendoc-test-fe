@@ -1,0 +1,337 @@
+.consultation__patient-Info {
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
+  font-family: var(--font-familyNue);
+  width: auto;
+}
+
+.pinfo {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+
+.pinfo-img {
+  border-radius: 50%;
+  background-color: orange;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/profile-mid.svg);
+}
+
+.pinfo-pic {
+  display: flex;
+  align-items: center;
+  padding: 12px 45px;
+  border-right: 2px solid #0000003b; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+.pinfo-labels {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #a9aca9;
+  text-align: center;
+}
+
+.pinfo-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #102646;
+  text-align: center;
+  font-family: HelveticaNeue;
+}
+
+.pinfo-flexcontainer-column {
+  width: 100%;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+}
+
+.pinfo-flexcontainer {
+  width: 100%;
+  display: flex;
+}
+
+.pinfo__name {
+  height: 100%;
+  padding: 0 0 0 60px;
+  /* border-right: solid 1px #a9aca9; */
+}
+
+.pinfo-flexcontainer span,
+.pinfo-flexcontainer div {
+  width: 50%;
+}
+
+.pinfo__contacts--label {
+  text-align: center;
+}
+
+.pinfo__contacts {
+  flex-grow: 1;
+  padding: 0 10px 0 30px;
+  flex-direction: column;
+  display: flex;
+}
+
+.pinfo__activity-container {
+  height: 50%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.pinfo__activity {
+  height: 30px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.pinfo__activity i {
+  background-image: url(../images/activity_tracking.svg);
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position-y: 55%;
+  background-position-x: 15px;
+  background-size: 40%;
+}
+
+.pinfo__activity div {
+  padding: 3px 15px 3px 40px;
+  border-radius: 5px;
+  background-color: #d2dff2;
+  font-size: 13px;
+  color: #0e58c7;
+  cursor: pointer;
+}
+
+
+.pinfo__lab {
+  height: 30px;
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pinfo__lab i {
+  background-image: url(../images/lab_report.svg);
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position-y: 55%;
+  background-position-x: 15px;
+  background-size: 40%;
+}
+
+.pinfo__lab div {
+  padding: 5px 15px 3px 40px;
+  border-radius: 5px;
+  background-color: #f2f0d2;
+  font-size: 13px;
+  color: #c7950f;
+  cursor: pointer;
+}
+
+.pinfo__contacts-container {
+  height: 50%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* justify-content: center; */
+}
+.pinfo__contacts-container > div {
+  width: 20%;
+}
+@media only screen and (max-width: 1700px) {
+  .pinfo__activity {
+    margin-left: 3rem;
+    width: 100%;
+  }
+  .pinfo__lab {
+    margin-left: 4rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .pinfo__activity-container {
+    margin-bottom: 2rem;
+  }
+  .pinfo {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  .pinfo__contacts {
+    padding: 0px;
+  }
+  .pinfo-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+    border: none;
+  }
+
+  .pinfo__name {
+    border-right: none;
+    height: 50%;
+    display: flex;
+    margin-left: 5rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pinfo__contacts {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .pinfo__contacts-container {
+    height: 50%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .pinfo__activity-container {
+    justify-content: space-around;
+  }
+  .pinfo__activity {
+    height: 30px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 4rem;
+  }
+  .pinfo__lab {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .pinfo {
+    height: auto;
+    width: auto;
+  }
+
+  .pinfo-pic {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .pinfo__name {
+    margin: 0rem;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .pinfo__contacts {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .pinfo__contacts-container {
+    height: 50%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0rem;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .pinfo__contacts-container {
+    height: 50%;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0rem;
+    margin-top: -1rem;
+  }
+  .pinfo__contacts-container > div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .pinfo__activity-container {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    margin-right: 4rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+  .pinfo__lab {
+    margin-top: 0.8rem;
+  }
+  .pinfo__name {
+    margin: 0rem;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pinfo-labels {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #a9aca9;
+    text-align: center;
+  }
+  .pinfo-text {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #272727;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .consultation__patient-Info {
+    padding: 0px;
+    margin: 0.6rem;
+  }
+}

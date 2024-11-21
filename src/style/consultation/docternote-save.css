@@ -1,0 +1,167 @@
+/* border-top: 1px solid #dfdddd;
+margin: 0px 10px 22px 10px;
+padding-top: 15px; */
+
+.patientsavenote {
+  border-top: 1px solid #dfdddd;
+  margin: 0px 10px 22px 10px;
+  padding-top: 10px;
+}
+.MSESpeech {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.MSE-Span {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #254069;
+}
+.MSE-speech-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 5vh;
+}
+.MSESpeech:first-child {
+  color: #808495;
+}
+.MSESpeech:last-child {
+  color: #254069;
+}
+.paitent-info-sn {
+  display: flex;
+  align-items: center;
+}
+
+.sn-title {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.sn-head {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #808080;
+  opacity: 1;
+}
+
+.sn-titlevalue {
+  margin-left: 10px;
+  font-size: 16px;
+  opacity: 1;
+  padding: 5px;
+}
+
+.sn-physexam {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sn-field {
+  font-size: 13px;
+  color: #808495;
+  opacity: 1;
+}
+
+.sn-fieldval {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.data-sn {
+  font-size: 16px;
+  color: #254069;
+}
+
+.docternoteli_sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #808495;
+  font-size: 16px;
+}
+
+.DocterNoteli {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .data-sn {
+    font-size: 10px;
+  }
+  .MSESpeech {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .MSE-speech-sub {
+    flex-direction: column;
+    gap: 0rem;
+    height: auto;
+  }
+  .doc-info-parent {
+    width: 100%;
+  }
+  .label-date {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .patientsavenote {
+    border-top: 1px solid #dfdddd;
+    margin: 0px 10px 15px 3px;
+    padding-top: 10px;
+  }
+  .sn-head {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #808080;
+    opacity: 1;
+  }
+  .sn-title {
+    flex-direction: column;
+  }
+  .sn-titlevalue {
+    margin-left: 10px;
+    font-size: 12px;
+    opacity: 1;
+    padding: 5px;
+  }
+
+  .data-sn {
+    font-size: 10px;
+  }
+
+  .docternoteli_sub {
+    font-size: 13px;
+  }
+
+  .DocterNoteli {
+    flex-direction: column;
+    margin-left: 0rem;
+    font-size: 13px;
+  }
+
+  .DocterNoteli p:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MSE-speech-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    height: auto;
+  }
+}

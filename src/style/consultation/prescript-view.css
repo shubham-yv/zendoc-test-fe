@@ -1,0 +1,664 @@
+.button-container-new {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+  position: relative;
+}
+
+.styled-button-new {
+  background-color: #4285f4;
+  border: none;
+  border-radius: 50%;
+  padding: 2px 4px;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 8px #568fe5, 0 0 0 13px #ffffff00,
+    0 0 0 18px #568fe5, 0 0 0 23px #cbe0ff, 0 0 0 28px #f1f3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.styled-button-new i {
+  color: white;
+  font-size: 16px; 
+}
+
+.button-label-new {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4285f4; /* Adjust the color as needed */
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.styled-button-new:hover {
+  background-color: #357ae8; /* Adjust the hover color as needed */
+}
+
+.line {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #e0e0e0; /* Adjust the color as needed */
+  margin: 10px 0;
+  z-index: 0;
+  position: relative;
+}
+
+.intake-duration-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+}
+.time-picker-container {
+  display: flex;
+}
+.drug-item {
+  cursor: pointer;
+}
+
+.side-effect-pres-container {
+  border: 1px solid #f40808;
+  margin: 1rem;
+  width: 93%;
+  padding: 0.6rem;
+  background-color: #ffe2e2;
+  border-radius: 4px;
+}
+
+.side-effect-pres-container-div {
+  margin-left: 0.6rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-effect-pres-container-div {
+  margin-right: 0.6rem;
+}
+
+.side-effect-pres-container-div > div > span {
+  margin-left: 0.6rem;
+}
+
+.side-effect-pres-container-div-2 {
+  font-size: 0.8rem;
+  color: #254069;
+  margin-left: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.Edit-Icons {
+  display: none;
+}
+
+.summary-btn {
+  background-color: #205fbf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .left1 {
+  display: flex;
+  flex-direction: column;
+} */
+.left1 > label {
+  color: #254069;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.right1 > label {
+  color: #254069;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.medicine-advice-labels > div {
+  color: #254069;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.left1 input[type="radio"] {
+  margin-right: 8px;
+}
+
+.MT {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.right1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.right1Sub {
+  display: flex;
+  flex-direction: column;
+  color: #254069;
+}
+.custom-accordion + .custom-accordion {
+  padding-top: 16px;
+  border-top: 1px solid #dfdddd !important;
+}
+.Accordian-Label {
+  color: #808495;
+  margin-top: 0.6rem;
+}
+.duration-dropdown {
+  margin-bottom: 8px;
+  padding: 8px 20px 8px 10px;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: #102646;
+  border: 1px solid #707070;
+  border-radius: 8px;
+}
+
+.duration-number {
+  width: 60px;
+  margin-right: 8px;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+.secondinput {
+  margin-left: 1rem;
+}
+
+.drug-dose-container {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+/* .left-section {} */
+
+.right-section {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.time-options {
+  display: flex;
+  border: 1px solid #707070;
+  border-radius: 8px;
+}
+
+.time-option {
+  padding: 8px 25px;
+  cursor: pointer;
+  border-right: 1px solid #707070;
+}
+
+.time-option:last-child {
+  border-right: none;
+}
+
+.time-option.selected {
+  background-color: #0c274d;
+  color: white;
+}
+
+.con-pres-parent {
+  padding: 0 12px 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.pres-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pres-header--label {
+  font-size: 1.5rem;
+  color: #808495;
+  font-family: Futura;
+}
+
+.pres-header--img {
+  cursor: pointer;
+  color: #205fbf;
+  font-size: 1rem;
+  margin: 0 10px;
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+  background-position-x: 5px !important;
+}
+
+.img-cst {
+  background-image: url(../images/cst.svg);
+}
+
+.img-print {
+  background-image: url(../images/print.svg);
+}
+
+.pres-tab-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.pres-tab-header > div {
+  width: 100%;
+  font-family: Futura;
+}
+
+.press-tab {
+  width: 50%;
+  text-align: center !important;
+  font-size: 0.8rem;
+  height: 30px;
+  background-color: #c5c7c5;
+  opacity: 0.2;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.press-headercontent {
+  display: flex;
+  align-items: center;
+}
+
+.border-radius-r {
+  border-top-right-radius: 6px;
+}
+
+.border-radius-l {
+  border-top-left-radius: 6px;
+}
+
+.pres-tab-selected {
+  background-color: #0c274d;
+  opacity: 1;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+}
+.pres-tab-not-selected {
+  background-color: #a9aca9;
+  opacity: 1;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+.add-drug {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.search-drug {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.drug-list {
+  position: absolute;
+  background-color: white;
+  border: solid 1px rgba(112, 112, 112, 0.5);
+  border-radius: 2px;
+  top: 96%;
+  padding: 10px;
+  width: 100%;
+  z-index: 999;
+}
+.search-drug-labels {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.search-drug-labels .anchor-basic {
+  font-size: 0.8rem;
+}
+
+.drug-dose-container .label-basic,
+.search-drug-labels .label-basic {
+  color: #254069;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-drug-input input::placeholder {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+.back-button-tools {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+
+.search-drug-input input {
+  margin-bottom: 5px;
+}
+
+.search-drug-input input {
+  margin-bottom: 5px;
+}
+
+.search-drug-input .label-basic {
+  font-size: 0.8rem;
+  color: #808495;
+}
+
+.medicine-advice {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.medicine-advice-labels {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #606060;
+}
+
+.advice-text textarea::placeholder {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+.advice-text .label-basic {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+.pres-summary-header {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  color: #254069;
+}
+
+.no-summary {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-summary .label-basic {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #606060;
+}
+
+.no-summary-cst {
+  background-size: 50%;
+  width: 200px;
+  background-position-x: 60%;
+  background-repeat: no-repeat;
+  background-image: url("../images/cst-btn.svg");
+}
+
+.summary-list-header {
+  font-family: var(--font-familyNue);
+  color: #1e64cc;
+  font-size: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) auto auto; /* Adjust according to the number of columns */
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  font-weight: 500;
+  border-bottom: 2px solid #ced0ce;
+}
+
+.summary-list-header .label-basic {
+  width: 100%;
+  text-align: center;
+}
+
+.summary-list-header .label-basic:first-child {
+  width: 100%;
+  padding-left: 0.6rem;
+}
+
+.summary-icons {
+  width: 30px !important;
+}
+
+.summary-list {
+  border: solid 1px #bfbfbf;
+  border-radius: 12px;
+  /* padding-left: 10px; */
+  display: grid;
+}
+.summary-list-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) auto auto; /* Adjust according to the number of columns */
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  color: #102646;
+  font-size: 0.7rem;
+  border-top: 2px solid #ced0ce;
+}
+
+.summary-list-item .label-basic {
+  text-align: center;
+}
+.summary-list-item .label-basic:first-child {
+  padding-left: 0.6rem;
+}
+
+.pres-header {
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.duration-drop-w {
+  width: 20vw;
+}
+@media only screen and (max-width: 1538px) {
+  .pres-tab-header {
+    justify-content: space-between;
+  }
+  .pres-tab-selected {
+    padding: 8px;
+  }
+  .pres-tab-not-selected {
+    padding: 8px;
+  }
+  .duration-dropdown {
+    padding: 8px 15px;
+  }
+  .intake-duration-container {
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+@media only screen and (max-width: 1164px) {
+  .pres-header {
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .duration-drop-w {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .right1 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intake-duration-container {
+    flex-direction: column;
+  }
+
+  .pres-tab-header {
+    margin-bottom: 1rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  .pres-tab-selected {
+    background-color: #0c274d;
+    opacity: 1;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border-radius: 1rem;
+  }
+  .pres-tab-not-selected {
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .pres-tab-header {
+    flex-direction: column;
+    /* margin: 1rem; */
+  }
+  .search-drug-labels {
+    justify-content: space-around;
+  }
+  .form-control {
+    width: auto;
+  }
+  .medicine-advice-labels {
+    margin: 1rem;
+    justify-content: space-around;
+  }
+  .pres-header {
+    flex-direction: column;
+  }
+  .left-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .right-section {
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .time-option {
+    padding: 8px 8px 8px 8px;
+  }
+  .left1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right1 {
+    gap: 4px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .duration-dropdown {
+    padding: 8px 20px;
+  }
+  .MT {
+    margin-top: 0rem;
+  }
+  .con-pres-parent {
+    padding: 0px;
+  }
+  .drug-dose-container {
+    display: block;
+  }
+  .Accordian-Label {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .summary-icons {
+    display: none !important;
+  }
+  .summary-list-header {
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+  }
+  .summary-list-item {
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.6rem;
+    /* place-items: center; */
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .time-option {
+    border-right: none;
+  }
+  .summary-list {
+    padding-left: 0px;
+  }
+
+  .con-pres-parent {
+    width: 100%;
+  }
+  .pres-tab-selected {
+    padding: 6px 10px 6px 10px;
+    text-align: center;
+  }
+  .pres-tab-header {
+    height: 95px;
+  }
+  .medicine-advice-labels {
+    flex-direction: column;
+  }
+  .tool-duration-unit-sub {
+    margin-left: 1rem;
+  }
+  .drug-dose-container .label-basic,
+  .search-drug-labels .label-basic {
+    font-size: 0.8rem;
+  }
+  .summary-list-header .label-basic {
+    font-size: 0.6rem;
+  }
+  .right1Sub {
+    font-size: 0.8rem;
+  }
+}
+.time-input2 {
+  padding: 0px 50px 0px 18px;
+  height: 4vh;
+}

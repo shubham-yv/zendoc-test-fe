@@ -1,0 +1,18 @@
+<svg id="profile-mid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="113" viewBox="0 0 113 113">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_31" data-name="Ellipse 31" cx="56.5" cy="56.5" r="56.5" fill="#257d79"/>
+    </clipPath>
+  </defs>
+  <circle id="Ellipse_32" data-name="Ellipse 32" cx="56.5" cy="56.5" r="56.5" fill="#ff9241"/>
+  <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+    <g id="Symbols" transform="translate(29.913 28.88)">
+      <g id="Head_Front_Short-Beard" data-name="Head/Front/Short-Beard" transform="translate(0 0)">
+        <g id="Head" transform="translate(0.246 2.279)">
+          <path id="Path_1028" data-name="Path 1028" d="M9.508,39.692c-5.3-6.225-8.892-13.853-8.292-22.4C2.944-7.337,37.228-1.919,43.9,10.512s5.876,43.96-2.742,46.182c-3.437.886-10.759-1.284-18.212-5.776L27.62,84.01H0Z" transform="translate(0 0)" fill="#b28b67" fill-rule="evenodd"/>
+        </g>
+        <path id="Hair" d="M78.355,51.31Q79.941,73.4,86.745,73.4c6.8,0,12.578-4.32,15.564-4.32,2.176,0,1.691,2.724.248,4.743-1.19,1.666-6.987,3.272-6.987,5.855s4.58.585,4.58,2.117c0,2.534.8,7.3-3.593,7.3-4.451,0-17.212-1.622-19.4-8.228q-2.117-6.395-2.738-26.5a6.91,6.91,0,0,0-7.728,6.856,6.884,6.884,0,0,0,2.08,4.94c-1.6,2.255-3.388,4.611-5.44,7.042-7.708-4.625-13.586-19.451-6.05-32.456,3.289-6.5,6.956-8.486,12.526-10.066a20.032,20.032,0,0,1,13.148-.969c7.75.665,14.67,3.028,16.631,4.431,0,7.337-1.422,9.514-13.564,9.322C83.038,45.04,80.744,47.753,78.355,51.31Z" transform="translate(-53.787 -29.02)" fill="#191847" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

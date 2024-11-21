@@ -1,0 +1,359 @@
+.Container-Print {
+  width: 90%;
+  margin: auto;
+}
+.custom-table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+.custom-table tr {
+  display: table-row;
+}
+
+.custom-table td {
+  display: table-cell;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.blue-line {
+  border: 0;
+  height: 20px;
+  background: rgb(0, 0, 105);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Prescription-Print {
+  width: 95%;
+  margin: auto;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-Print {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.Left-Card-Print {
+  background-color: #f2f2f2;
+  margin-right: 20px;
+  text-align: center;
+  height: 190px;
+}
+
+.Left-Card-inner {
+  background-color: rgb(0, 0, 105);
+  color: white;
+  padding: 10px;
+}
+
+.Left-Card-Print > h3 {
+  text-align: center;
+  height: 50px;
+  padding: 20px;
+  margin: 10px;
+  color: rgb(0, 0, 88);
+}
+
+.Right-Card-Print {
+  background-color: white;
+  border: 1px solid rgb(211, 208, 208);
+  border-radius: 5px;
+  flex: 1;
+}
+
+.Right-Card-inner {
+  background-color: white;
+  border: 1px solid rgb(211, 208, 208);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.Right-Card-inner-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.patient-data-Print {
+  display: flex;
+  width: 88.5%;
+  margin: auto;
+}
+
+.vitals,
+.other-data,
+.history {
+  background-color: white;
+  border: 1px solid rgb(211, 208, 208);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.vitals {
+  width: 100%;
+}
+
+.history {
+  width: 30%;
+}
+
+.vitals h3,
+.history h3 {
+  margin-top: 0;
+  border-bottom: 1px solid rgb(211, 208, 208);
+  padding: 10px;
+  color: rgb(0, 0, 88);
+}
+
+table {
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+td {
+  padding-right: 60px;
+  text-align: left;
+}
+
+.custom-table {
+  width: 100%;
+  display: flex;
+}
+
+.Custom-table {
+  width: 87.5%;
+  margin: auto;
+}
+
+.Custom-table th,
+.Custom-table td {
+  border: 1px solid black;
+  padding: 8px;
+  width: 50%;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.table,
+.table2,
+.Custom-table {
+  width: 100%;
+  max-width: 86%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table2 th,
+.table2 td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #535353;
+  color: white;
+  font-weight: bold;
+}
+
+.table2 th {
+  background-color: #535353;
+  color: white;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.prescription-disclaimer {
+  background-color: #29466d;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 84.5%;
+  margin: 30px auto;
+}
+
+.DN-Container {
+  width: 86%;
+  margin: auto;
+  border: 1px solid rgb(172, 172, 172);
+  margin-top: 2rem;
+}
+.DN-Container-inner {
+  margin: 2rem;
+}
+.DN-Container h1 {
+  color: rgb(4, 4, 109);
+}
+
+.patient-info-container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.patient-info-row1 {
+  font-weight: 500;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.patient-info-label1 {
+  padding: 5px;
+  color: grey; /* Adjust the color as needed */
+}
+
+.patient-info-value1 {
+  padding: 5px;
+  color: rgb(4, 4, 109); /* Adjust the color as needed */
+}
+.patient-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-form-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.patient-form-section {
+  margin-top: 10px;
+}
+.patient-form-section {
+  color: rgb(4, 4, 109);
+}
+.circle-number {
+  background-color: rgb(28, 28, 202);
+  color: white;
+  padding: 5px 10px;
+  height: 31px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+.patient-form-container p {
+  margin-left: 2.5rem;
+}
+.patient-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.patient-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.patient-info-label {
+  color: grey;
+  flex: 1;
+}
+
+.patient-info-value {
+  color: rgb(4, 4, 109); /* Adjust the color as needed */
+  flex: 1; /* Adjust the flex as needed */
+}
+
+.patient-info-sub-label {
+  margin-left: 3.5rem;
+}
+.circle-number1 {
+  background-color: rgb(28, 28, 202);
+  color: white;
+  padding: 3px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.hr-print {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.vitals-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px 0 40px;
+}
+
+.vitals-info-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.vitals-label {
+  color: gray;
+}
+
+.vitals-value {
+  color: darkblue;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-left: 20px;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .Container-Print {
+    page-break-inside: avoid;
+    position: relative;
+  }
+
+  .prescription-disclaimer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #29466d;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    page-break-before: auto;
+  }
+
+  .table2 {
+    page-break-inside: avoid;
+  }
+}

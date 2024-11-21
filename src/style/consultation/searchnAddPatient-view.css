@@ -1,0 +1,227 @@
+.con-sp-parent {
+  position: absolute;
+  background-color: white;
+  border: solid 1px rgba(112, 112, 112, 0.5);
+  border-radius: 2px;
+  top: 80px;
+  left: 12.6rem;
+  padding: 10px;
+  width: 65%;
+}
+
+.sp-item-img {
+  height: 35px;
+  width: 35px;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.con-sp-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #0f302f;
+  font-size: 1.2rem;
+  font-family: HelveticaNeue;
+}
+
+.con-sp-addPatient {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+.con-sp-addPatient span {
+  font-size: 0.8rem;
+  color: #3b88fa;
+  display: flex;
+  align-items: center;
+}
+
+.sp-item-body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.sp-item-data {
+  display: flex;
+  flex-grow: 1;
+  color: #0f302f;
+  font-size: 0.8rem;
+}
+
+.sp-item-header {
+  display: flex;
+  flex-grow: 1;
+  color: #a9aca9;
+  font-size: 0.7rem;
+}
+
+.sp-item-header .label-basic {
+  width: 16%;
+  height: 35px;
+  display: flex;
+  align-items: flex-end;
+  font-family: HelveticaNeue;
+}
+
+.sp-item-data .label-basic {
+  width: 16%;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  font-family: HelveticaNeue;
+  color: #102646;
+  /* padding-top: 5px; */
+}
+
+.sp-list-item {
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 5%);
+  background-color: #fff;
+  margin: 10px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.zenquip-select-gender .MuiSelect-select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 0.8rem;
+  color: #0f302f;
+}
+
+.zenquip-select-gender li {
+  font-size: 0.8rem;
+}
+
+.zenquip-select-gender .MuiInputLabel-root {
+  top: -8px;
+  font-size: 0.8rem;
+  color: #0f302f;
+}
+.blue-buttonadd {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #205fbf;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .con-sp-addPatient {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* font-family: var(--font-familyGill); */
+    flex-direction: row;
+  }
+}
+
+/* @media screen and (min-width: 822px) {
+  .con-sp-parent {
+    position: absolute;
+    background-color: white;
+    border: solid 1px rgba(112, 112, 112, 0.5);
+    border-radius: 2px;
+    top: 67px;
+    left: 12.6rem;
+    padding: 10px;
+  }
+} */
+@media screen and (max-width: 1500px) {
+  .con-sp-parent {
+    left: 0.6rem;
+    width: 98.5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .con-sp-parent {
+    top: 77px;
+  }
+  .sp-item-img {
+    display: none;
+  }
+  .sp-list-item {
+    height: auto;
+    flex-direction: column;
+  }
+  .sp-item-body {
+    width: 95%;
+    flex-direction: row;
+  }
+  .sp-item-data {
+    flex-direction: column;
+    height: 200px;
+    margin-top: 1.1rem;
+    align-items: center;
+  }
+  .sp-item-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sp-item-header .label-basic {
+    width: auto;
+  }
+  .sp-item-data .label-basic {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .con-sp-addPatient {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blue-buttonadd {
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+  }
+  .con-sp-header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .con-sp-parent {
+    top: 168px;
+    left: 1rem;
+    width: 96%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .con-sp-parent {
+    top: 168px;
+    left: 1rem;
+    width: 94%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .con-sp-parent {
+    width: 88%;
+  }
+  .sp-item-body {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,338 @@
+.PatientInforActivity {
+  margin: 1rem;
+}
+.PatientInforActivity > h4 {
+  color: #1e64cc;
+}
+.pill-habit-container,
+.mood-tracking-container {
+  display: flex;
+  gap: 1rem;
+  /* margin: 1rem; */
+}
+.mood-tracking-container {
+  margin-top: 1rem;
+}
+.Pill-Container {
+  height: auto;
+  width: 25%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.Pill-Tracking {
+  display: flex;
+  justify-content: space-between;
+}
+.Habit-Container {
+  height: auto;
+  width: 75%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.Habit-Container-Content {
+  max-width: calc(100% - 120px);
+  text-align: left;
+  color: #000000;
+  width: 100%;
+}
+.Habit-Container-Content > h5 {
+  color: #102646;
+  font-weight: 600;
+}
+.Mood > h5 {
+  color: #102646;
+  font-weight: 600;
+}
+.Habit-Container-Sub-Content {
+  display: flex;
+  margin-top: 1.4rem;
+  justify-content: space-between;
+}
+.Pill-Container > h5 {
+  margin: 0.6rem;
+}
+.Habit-Container > h5 {
+  margin: 0.6rem;
+}
+.Pill-Container-Content {
+  max-width: calc(100% - 120px);
+  text-align: left;
+  color: #000000;
+}
+.Pill-Container-Content > h5 {
+  color: #102646;
+  font-weight: 600;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+}
+
+.Pill-Container-label {
+  color: #a5a5a5;
+  font-size: 0.9rem;
+}
+
+.Habit-Container-label {
+  color: #a5a5a5;
+  font-size: 0.9rem;
+}
+
+.Habit-Container-label-Sub {
+  color: #a5a5a5;
+  font-size: 0.8rem;
+}
+
+.Pill-Container-Sub-Content {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 90%;
+}
+.horizontal-line-activity {
+  border-top: 1px solid #a9aca9;
+  width: auto;
+  margin: auto;
+  color: #1056ba;
+  opacity: 0.5;
+  margin: 1rem 0rem;
+}
+.horizontal-line-mid {
+  border-top: 1px solid #a9aca9;
+  width: auto;
+  margin: auto;
+  color: #1056ba;
+  opacity: 0.5;
+  margin: 2rem 0rem;
+}
+.Mood-Frist-Container {
+  height: auto;
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.Mood-Second-Container {
+  height: 400px;
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.Mood-Tracking-pecentage {
+  display: flex;
+  justify-content: space-between;
+}
+.Last-Mood-Tracking {
+  margin: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.MoodTracking-Main-Con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.MoodTrackContainer {
+  background-color: #f0f8ff;
+  padding: 0.6rem 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.MoodTrackC {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.MoodTrackContainer-Span {
+  color: #488919;
+  font-size: 1.5rem;
+}
+.Last-Mood-Tracking > p {
+  font-size: 0.9rem;
+  color: #102646;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.MoodTrackContainer > span {
+  font-size: 1.5rem;
+  margin: 0 0.6rem;
+  color: #488919;
+  font-weight: bolder;
+}
+.responsive-chart {
+  height: 100%;
+}
+.Mood-Tracking-Sub-Container {
+  color: #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.Mood-Tracking-Sub-Container-Avg {
+  color: #a7a7a7;
+  margin-right: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.Mood-Tracking-Sub-Container-Healthy {
+  color: #a7a7a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+.Previous {
+  font-size: 0.9rem;
+  color: #1e64cc;
+}
+.Habit-C {
+  display: flex;
+  gap: 0.6rem;
+}
+.Pill-Container-Sub-Content-P {
+  display: flex;
+  gap: 0.6rem;
+}
+@media screen and (max-width: 1700px) {
+  .Pill-Tracking {
+    flex-direction: column;
+  }
+  .Pill-Container {
+    height: auto;
+  }
+  .Pill-Container-Content {
+    width: auto;
+    max-width: none;
+  }
+  .Pill-Container-Sub-Content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .pill-habit-container {
+    flex-direction: column;
+  }
+  .Pill-Tracking {
+    flex-direction: row;
+  }
+  .Pill-Container {
+    margin: auto;
+    width: 55%;
+  }
+  .Pill-Container-Sub-Content {
+    flex-direction: row;
+  }
+  .circle {
+    margin-right: 1rem;
+  }
+  .Habit-Container {
+    width: 100%;
+  }
+  .PatientInforActivity {
+    margin: auto;
+  }
+  .mood-tracking-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0rem 1rem;
+  }
+  .Mood-Frist-Container {
+    width: 100%;
+  }
+  .Mood-Second-Container {
+    width: auto;
+    margin-top: 1rem;
+  }
+  .Mood-Tracking-Sub-Container-Avg {
+    margin-right: 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Pill-Container {
+    margin: auto;
+    width: 100%;
+  }
+  .Pill-Container-Sub-Content {
+    width: 93%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Habit-Container-Sub-Content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Habit-Container {
+    height: auto;
+  }
+  .circle {
+    margin-right: 0rem;
+  }
+  .Habit-Container-Content {
+    width: auto;
+    max-width: none;
+  }
+  .Pill-Container-label {
+    font-size: 0.8rem;
+  }
+  .mood-tracking-container {
+    margin: 0rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .Pill-Tracking {
+    flex-direction: column;
+    margin: auto;
+  }
+  .circle {
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .PatientInforActivity > h4 {
+    font-size: 1rem;
+  }
+  .Pill-Container-Sub-Content-P,
+  .Pill-Container-Sub-Content-P > p {
+    font-size: 0.9rem;
+  }
+  .Habit-C {
+    display: contents;
+  }
+  .Habit-Status {
+    font-size: 0.8rem;
+  }
+  .HabitCircle {
+    margin-top: 1rem;
+  }
+  .Mood-Second-Container {
+    margin-top: 1rem;
+  }
+  .Mood-Frist-Container {
+    display: none;
+  }
+}
+@media screen and (max-width: 340px) {
+  .Pill-Container-Sub-Content {
+    flex-direction: column;
+  }
+  .Mood-Tracking-pecentage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Last-Mood-Tracking{
+    margin: 0rem;
+  }
+}

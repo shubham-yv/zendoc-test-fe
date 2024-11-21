@@ -1,0 +1,194 @@
+.event-normal {
+  background-color: #ff9241;
+}
+
+.event-low {
+  background-color: #206fbf;
+}
+
+.event-medium {
+  background-color: #e3ad33;
+}
+
+.event-high {
+  background-color: #d64522;
+}
+
+.event-default {
+  background-color: #1e64cc;
+}
+
+.popup-header-normal {
+  background-color: #ff9241; /* Normal */
+}
+
+.popup-header-low {
+  background-color: #206fbf; /* Low */
+}
+
+.popup-header-medium {
+  background-color: #e3ad33; /* Medium */
+}
+
+.popup-header-high {
+  background-color: #d64522; /* High */
+}
+
+.popup-header-default {
+  background-color: #1e64cc; /* Default */
+}
+
+.Virtual-Meet-Container {
+  display: flex;
+}
+
+.view-details {
+  font-size: 14px;
+  color: #1E64CC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.calender-container {
+  background-color: rgb(137, 195, 223);
+  border-radius: 6px;
+  width: 100px;
+  color: white;
+  font-weight: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.Sub-React-Calender {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.fc-timegrid-event .fc-event-main {
+  padding: 0.4rem;
+}
+
+.fc .fc-timegrid-col-frame {
+  width: 100%;
+}
+
+.custom-day-header {
+  width: 25%;
+}
+
+.custom-week-header {
+  width: 100%;
+}
+
+.fc-timegrid-event-harness-inset .fc-timegrid-event {
+  height: auto;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  transition: background-color 1s ease;
+}
+
+.fc-timegrid-event-harness-inset .fc-timegrid-event:hover {
+  height: 25vh;
+  transition: height 1s ease;
+}
+
+/* .event-container {
+  border-top: 2px solid #cc1e1e;
+  padding-top: 5px;
+  margin-bottom: 10px;
+} */
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.popup {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 9;
+}
+
+.popup-content {
+  text-align: left;
+  padding: 20px;
+}
+
+.popup-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-details {
+  margin-bottom: 15px;
+}
+
+.popup button {
+  background-color: #1e64cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.popup button:hover {
+  background-color: #155fb0;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.popup-header-first {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.popup-details > p > span {
+  margin-inline-start: 0.4rem;
+  font-size: 14px;
+}
+
+.Inner-border-popup {
+  border: 1px solid #7070704d;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .landing-Page__search-bar {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Sub-Cal {
+    width: 196px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .css-1q04gal-MuiDateCalendar-root {
+    width: 156px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .css-1q04gal-MuiDateCalendar-root {
+    width: 196px;
+  }
+}

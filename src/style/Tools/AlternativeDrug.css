@@ -1,0 +1,69 @@
+.Search_AlternativeDrug_Container {
+  background-color: #ffffff;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  border: 1px solid #70707033;
+  margin-top: 2rem;
+}
+.Search_AlternativeDrug_SubContainer {
+  margin: 2rem;
+  margin-left: 3rem;
+  height: 25vh;
+}
+
+.Alternative-Drug-Button {
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: none;
+  color: #808495;
+  border-radius: 8px;
+  height: 34px;
+  width: 212px;
+  text-align: center;
+  margin-top: 20px;
+}
+.Alternative-Drug-Box-Container {
+  width: 255px;
+  height: 106px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f2f5f7;
+  color: #254069;
+  font-weight: bold;
+}
+.Alternative-Drug-Box {
+  display: flex;
+  gap: 1rem;
+}
+.Box-Container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .Box-Container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Search_AlternativeDrug_SubContainer {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Search_AlternativeDrug_Container {
+    margin: 1rem 0rem;
+  }
+  .Search_AlternativeDrug_SubContainer {
+    margin-left: 0.8rem;
+  }
+  .Alternative-Drug-Span {
+    font-size: 0.8rem;
+  }
+  .Alternative-Drug-Box-Container {
+    width: auto;
+  }
+  .Alternative-Drug-Button {
+    width: 130px;
+  }
+}

@@ -1,0 +1,238 @@
+.Drug-Header {
+  margin: 2rem;
+}
+.Search_Drug_Main_Container {
+  background-color: #ffffff;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  border: 1px solid #70707033;
+}
+.search-drug-heading {
+  margin-left: 2.9rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  color: #254069;
+}
+.search-drug-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+  gap: 25px;
+}
+
+.drug2 {
+  color: rgb(55, 55, 213);
+}
+
+.search-drug-contentsearch-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: calc(100% - 250px);
+  margin-left: 50px;
+}
+
+.search-drug-contentsearch-bar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  color: #cecfd0;
+}
+
+.search-drug-contentsearch-bar button {
+  font-size: 0.8rem;
+  background-color: white;
+  color: #1e64cc;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-drug-contentsearch-bar button i {
+  margin-right: 5px;
+}
+
+.search-drug-add-patient {
+  text-align: center;
+  background-color: #1e64cc;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 140px;
+  margin-right: 1rem;
+}
+
+.First-Drug::placeholder {
+  color: white;
+}
+
+.Second-Drug::placeholder {
+  color: white;
+}
+
+.clear-drug-add-patient {
+  text-align: center;
+  background-color: #ff9241;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 140px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.search-drug-submit-button {
+  color: #808495;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 0.8rem;
+}
+
+.search-drug-span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 130%;
+  border-left: 1px solid #808495;
+  margin-right: 5px;
+}
+
+.First-Drug {
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  padding: 5px;
+  width: auto;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #1e64cc;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.Second-Drug {
+  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+  padding: 5px;
+  width: auto;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #1e64cc;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.search-drug-heading-h4 {
+  color: #254069;
+  margin-left: 50px;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.drug-list-tools {
+  margin: 0rem;
+  width: 75.7%;
+  margin-left: 3rem;
+  background-color: white;
+  border: solid 1px rgba(112, 112, 112, 0.5);
+  border-radius: 2px;
+  top: 96%;
+  padding: 10px;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-drug-content {
+    flex-direction: column;
+  }
+  .First-Drug {
+    margin-left: 0rem;
+  }
+  .search-bar-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-drug-contentsearch-bar {
+    width: calc(100% - 50px);
+    margin-right: 1rem;
+  }
+  .search-drug-heading-h4 {
+    text-align: center;
+    margin-left: 0rem;
+    font-size: 0.8rem;
+  }
+  .drug-list-tools {
+    width: 96.7%;
+    margin-left: 1rem;
+  }
+  .drug-details {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .drug-list-tools {
+    width: 93.7%;
+    margin-left: 1rem;
+  }
+  .search-drug-contentsearch-bar {
+    width: auto;
+    margin-left: 0.6rem;
+  }
+  .search-drug-content {
+    width: auto;
+  }
+  .search-drug-contentsearch-bar button {
+    padding: 6px 10px;
+  }
+  .First-Drug {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .Second-Drug {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .search-bar-button-container {
+    flex-direction: column;
+  }
+  .search-drug-add-patient {
+    margin-right: 0rem;
+  }
+  .Search_Drug_Main_Container {
+    margin: 0rem;
+  }
+  .search-drug-heading {
+    margin-left: 1rem;
+  }
+  .Drug-Header {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .search-drug-contentsearch-bar button {
+    padding: 4px 8px;
+  }
+  .search-drug-add-patient {
+    padding: 6px 12px;
+  }
+}

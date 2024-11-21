@@ -1,0 +1,44 @@
+.search-patient-container {
+    position: relative;
+    width: 100%;
+}
+.search-results-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    position: relative; /* Change back to relative positioning if needed */
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%; /* Set width to 100% */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 999;
+}
+
+
+.search-results-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-results-second-line {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.search-results-message {
+    flex-grow: 1; /* Allow the text to take up remaining space */
+    margin-bottom: 5px; /* Add some space between lines */
+}
+
+.add-patient-button {
+    background-color: #205fbf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Add some space between text and button */
+}

@@ -1,0 +1,124 @@
+.Journals {
+  height: 430px;
+  width: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.Journal-Heading {
+  color: #102646;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Journal-Container {
+  display: flex;
+  flex-direction: column;
+}
+.Journal-Container > p {
+  color: #a5a5a5;
+  font-size: 0.9rem;
+  margin-bottom: 0rem;
+}
+.Journal-Section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.SubJournalContent > p {
+  color: #a7a7a7;
+  font-size: 0.9rem;
+}
+.JournalContainer {
+  display: flex;
+  gap: 0.6rem;
+}
+.JournalsSection-Container {
+  display: flex;
+  gap: 1rem;
+}
+.JournalsSection-Sub {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  color: #808495;
+  font-size: 1.2rem;
+}
+.All-Journals {
+  width: 30%;
+}
+.JournalDescription {
+  width: 70%;
+  padding: 1rem;
+  height: auto;
+  background-color: white;
+}
+.JournalDescriptionContent {
+  margin-top: 1.8rem;
+}
+.JournalDescriptionContent > h6 {
+  color: #505050;
+  font-weight: 600;
+}
+.All-Journals-Content {
+  display: flex;
+  justify-content: space-between;
+}
+.ALL-Journals-Container-Main {
+  background-color: #fff;
+  padding: 1rem;
+}
+.All-Journal-Date {
+  color: #505050;
+}
+.All-Journals-Main-Heading {
+  color: #505050;
+  font-weight: 600;
+}
+@media screen and (max-width: 670px) {
+  .Journal-Section {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .Journals {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .JournalsSection-Container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .JournalsSection-Sub {
+    margin: 0 0 1rem 0;
+  }
+  .All-Journals{
+    width: 70%;
+  }
+  .JournalDescription{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .All-Journals{
+    width: 100%;
+  }
+  .JournalsSection-Sub{
+    margin: 1rem;
+  }
+  .Back-BTN{
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .All-Journals-Content{
+    flex-direction: column;
+  }
+  .All-Journal-Date{
+    font-size: .8rem;
+  }
+  .JournalDescriptionContent > p{
+    font-size: .9rem;
+  }
+}
+

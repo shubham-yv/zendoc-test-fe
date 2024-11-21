@@ -1,0 +1,271 @@
+.psy-note-form {
+  width: 60%;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pnf-header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 0 20px 0 40px;
+}
+
+.pnf-back {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  color: #606060;
+}
+.Archived {
+  color: #254069;
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.Archived2 {
+  color: #254069;
+  display: flex;
+  font-size: 1rem;
+}
+.Archived-Parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.custom-radio {
+  color: #808080;
+}
+
+.custom-radio:checked {
+  color: #ff9241;
+}
+
+.Questions {
+  color: #102646;
+  font-size: 1rem;
+  font-family: Helvetica;
+  src: url(../Font/helvetica-light-587ebe5a59211.ttf);
+}
+.radio-group-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.radio-group-container label {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: Helvetica;
+  src: url(../Font/helvetica-light-587ebe5a59211.ttf);
+}
+
+.label-diagnosis {
+  color: #808495;
+  font-size: 0.8rem;
+}
+.pnf-last-note {
+  font-size: 0.8rem;
+  color: #272727;
+  opacity: 0.5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pnf-body {
+  font-family: var(--font-familyNue);
+}
+
+.pnf-body .label-basic {
+  color: #606060;
+  font-size: 1rem;
+}
+
+.pnf-body input {
+  font-size: 0.8rem;
+}
+
+.pn-symptoms {
+  width: 50%;
+  padding-right: 15px;
+}
+
+.pn-symptoms-parent {
+  padding-top: 15px;
+  margin: 0 15px;
+  /* border-top: 1px solid lightgray; */
+  margin-bottom: 1rem;
+}
+
+.pn-diagnosis {
+  margin: 0px 15px 5px 15px;
+  padding-top: 15px;
+  /* border-top: 1px solid lightgray; */
+}
+
+.pn-current-symptom {
+  margin: 0px 15px 5px 15px;
+  padding-top: 15px;
+  /* border-top: 1px solid lightgray; */
+}
+
+.pn-events {
+  margin: 0px 15px 5px 15px;
+  padding-top: 15px;
+  /* border-top: 1px solid lightgray; */
+}
+
+.pn-medication {
+  margin: 0px 15px 5px 15px;
+  padding-top: 15px;
+  /* border-top: 1px solid lightgray; */
+  font-family: var(--font-familyNue);
+}
+
+.psychonote-inputfooter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.psychonote-inputfooter button {
+  margin: 0 10px;
+}
+
+.pn-safety {
+  margin: 15px;
+  padding-top: 15px;
+  /* border-top: 1px solid lightgray; */
+}
+
+.pn-progress {
+  margin: 15px;
+  padding-top: 15px;
+  border-top: 1px solid lightgray;
+}
+
+.pn-progress-container {
+  display: flex;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+.pn-progress-parent button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.6s ease-in-out;
+}
+
+.pn-progress-parent button:hover {
+  background-color: #ff9241;
+}
+
+.pn-progress-parent button:active {
+  background-color: #ff9241;
+}
+
+.pn-progress-parent {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pnf-header-time {
+  margin-left: 35rem;
+  font-size: 0.8rem;
+  color: #808080;
+}
+.pn-progress-parent .label-basic {
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .psy-note-form {
+    width: 100%;
+    margin: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
+  }
+  .pn-symptoms {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .pnf-header-text {
+    width: 100%;
+  }
+  .pnf-last-note {
+    width: 100%;
+  }
+  .dis-input-guardian {
+    margin-top: 1rem;
+  }
+  .psy-note-form {
+    width: auto;
+  }
+  .pnf-header {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Archived-Parent > .Archived:nth-child(1) label {
+    display: none;
+  }
+  .Archived-Parent {
+    gap: 0rem;
+  }
+  .psy-note-form {
+    padding: 0rem;
+    width: 95%;
+  }
+  .Archived {
+    flex-direction: column;
+  }
+  .radio-group-container label {
+    align-items: center;
+    justify-content: start;
+    display: flex;
+  }
+  .pn-progress-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .pnf-body .label-basic {
+    font-size: 0.8rem;
+  }
+  .Questions {
+    font-size: 0.9rem;
+  }
+  .psychonote-inputfooter {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .dis-input-guardian {
+    margin-top: 0.4rem;
+  }
+}

@@ -1,0 +1,168 @@
+.profile-Container {
+  background-image: linear-gradient(to bottom, #0e58c7, #1350ac);
+  border-radius: 8px;
+}
+.ProfileIMG {
+  margin-top: 1rem;
+}
+.Edit-Container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.Edit-Container > img {
+  margin: 1rem;
+}
+.Edit-Container > h5 {
+  margin-top: 0.6rem;
+}
+.Profie-Sub-Container {
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: white;
+  position: relative;
+}
+.Profie-Sub-Container2 {
+  display: flex;
+  gap: 2rem;
+}
+.Sub-Profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.Sub-Profile > h6 {
+  margin-top: 0.6rem;
+}
+.Profile-Description {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 10%;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #70707033;
+  padding: 1rem;
+}
+.Profile-Description > p {
+  color: #777777;
+}
+.EducationContainer {
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #70707033;
+  position: relative;
+  bottom: 10%;
+  padding: 1rem;
+}
+
+.EducationContainerSub2 > ul li,
+.ExperienceContainerSub2 > ul li,
+.SpecializedContainerSub2 > ul li {
+  color: #777777;
+  margin-left: -1.2rem;
+  margin-top: 1rem;
+}
+
+.EducationContainerSub2 > ul li::marker,
+.ExperienceContainerSub2 > ul li::marker,
+.SpecializedContainerSub2 > ul li::marker {
+  color: #0e58c7;
+}
+
+.EducationContainerSub2 > h6,
+.ExperienceContainerSub2 > h6,
+.SpecializedContainerSub2 > h6 {
+  color: #0e58c7;
+}
+
+.EducationContainerSub2 > button,
+.ExperienceContainerSub2 > button,
+.SpecializedContainerSub2 > button {
+  background-color: #edf4fd;
+  color: #0e57c4;
+  border: none;
+}
+
+.ExperienceContainer {
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #70707033;
+  position: relative;
+  bottom: 09%;
+  padding: 1rem;
+}
+
+.SpecializedContainer {
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #70707033;
+  position: relative;
+  bottom: 08%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 999px) {
+  .Profile-Description {
+    bottom: 7%;
+    margin: 1rem 0rem;
+  }
+  .EducationContainer {
+    bottom: 07%;
+  }
+  .ExperienceContainer {
+    bottom: 06%;
+  }
+  .SpecializedContainer {
+    bottom: 05%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .profile-Container {
+    border-radius: 0px;
+  }
+  .Profie-Sub-Container2 {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .Profie-Sub-Container {
+    height: 36vh;
+  }
+  .Profile-Description > p {
+    font-size: 0.8rem;
+  }
+  .EducationContainer,
+  .ExperienceContainer,
+  .SpecializedContainer {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .Edit-Container > img {
+    margin: 0.5rem;
+    height: 1rem;
+  }
+  .Edit-Container > h5 {
+    font-size: 1rem;
+  }
+  .EducationContainerSub2 > ul li,
+  .ExperienceContainerSub2 > ul li,
+  .SpecializedContainerSub2 > ul li {
+    font-size: 0.8rem;
+  }
+}

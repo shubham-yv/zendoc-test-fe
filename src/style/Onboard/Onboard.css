@@ -1,0 +1,152 @@
+/* Container for the file input field */
+.file-input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between input and button */
+}
+
+/* Style for the file input field */
+.file-input-container input[type="file"] {
+  width: 100%; /* Full width */
+  padding: 0.5rem; /* Padding for better spacing */
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  background: #fff; /* White background */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Style for the file input label */
+.file-input-container label {
+  margin-bottom: 0; /* Remove margin bottom from label */
+  font-weight: bold; /* Make label text bold */
+  color: #495057; /* Dark gray color for label */
+}
+
+
+.Education-Div {
+  display: flex;
+  flex-direction: column;
+}
+
+.containero {
+  background-color: #f9fbfc;
+  height: auto;
+}
+.custom-container {
+  padding: 20px;
+  color: #0e58c7;
+}
+.Onboard-BTN {
+  padding: 9px 40px;
+  background-color: #1e64cc;
+  color: rgb(252, 252, 252);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 40px;
+  font-size: 18px;
+}
+.Skip {
+  text-decoration: underline;
+  font-size: 18px;
+}
+.Li-Box {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.L-Box label,
+.M-Box label,
+.Li-Box label {
+  color: #254069;
+  font-weight: 550;
+}
+.Li-Box input::placeholder {
+  font-size: 80%;
+  opacity: 0.6;
+}
+.M-Box {
+  background-color: #ffffff;
+  padding: 40px;
+}
+.M-Box input::placeholder {
+  font-size: 80%;
+  opacity: 0.6;
+}
+.L-Box {
+  background-color: #ffffff;
+  padding: 40px;
+}
+.L-Box input::placeholder {
+  font-size: 80%;
+  opacity: 0.6;
+}
+
+.Doc-Degree-IP {
+  margin-top: 2.1rem;
+}
+
+.Doc-Degree {
+  display: flex;
+  align-items: end;
+  margin: 0rem 1rem;
+}
+.edu-data {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.Onboard-Salutation {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+@media (max-width: 1180px) {
+  .OnboardProfile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .col-md-6 {
+    max-width: 100%;
+    flex: 0 0 90%;
+  }
+}
+
+@media (max-width: 960px) {
+  .col-md-6 {
+    max-width: 100%;
+  }
+  .Doc-Degree {
+    flex-direction: column;
+    align-items: start;
+  }
+  .Doc-Degree-IP {
+    margin-top: 0rem;
+  }
+  .DgreCetificte {
+    display: none;
+  }
+  .DegreeeContainer {
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .OnboardProfile {
+    padding: 10px;
+  }
+  .OnboardProfile h2 {
+    font-size: 24px;
+  }
+  .Onboard-BTN {
+    padding: 7px 25px;
+  }
+  .Doc-Degree-IP > input {
+    width: 50%;
+  }
+}

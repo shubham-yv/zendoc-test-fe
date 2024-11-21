@@ -1,0 +1,290 @@
+.new-patient-parent {
+  font-family: var(--font-family) !important;
+  border-radius: 10px;
+  border: solid 1px #dedede;
+  background-color: #ffffff;
+  width: 70%;
+  display: table;
+  margin: 0 auto;
+  min-width: 500px;
+  padding: 25px 0 31px 29px;
+  position: relative;
+}
+
+.np-patient-label {
+  height: 44px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.np-patient-label label {
+  font-family: Futura;
+  font-size: 2rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0f302f;
+}
+
+.np-patient-label div {
+  position: absolute;
+  width: 25px;
+  font-size: 20px;
+  top: 30px;
+  right: 38px;
+  opacity: 0.43;
+  color: #1f1f1f;
+  cursor: pointer;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.np-patient-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.np-patient-name label {
+  height: 30px;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-weight: 600;
+  color: #254069;
+}
+
+.np-label {
+  color: #254069;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.np-patient-name input {
+  height: 40px;
+  margin: 13px 0 0;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: solid 1px #808495;
+  background-color: #ffffff;
+  margin-top: 0px;
+  width: 50%;
+}
+
+.np-gender-age {
+  display: flex;
+}
+
+.AddPatientVerifyBTN {
+  width: auto;
+  height: 40px;
+  margin: 0 0 0 15px;
+  border-radius: 5px;
+  padding: 12px 45px 12px 45px;
+  background-color: #205fbf;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px !important;
+}
+
+.np-parentcontainer {
+  margin-bottom: 40px;
+  font-family: var(--font-familyNue);
+}
+
+.np-gender {
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.np-age {
+  display: flex;
+  flex-direction: column;
+}
+
+.np-mail-input,
+.np-mobile-input {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.np-mail-otp,
+.np-mobile-otp {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 30px;
+  justify-content: space-evenly;
+}
+
+.np-cancel {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+
+.np-submit {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #d65022;
+}
+
+.np-mail-label span {
+  color: #205fbf;
+  font-size: 0.7rem;
+}
+
+.np-mail-label,
+.np-mobile-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.np-mobile-label span {
+  color: #205fbf;
+  font-size: 0.7rem;
+}
+
+.np-mail-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.np-mobile-text {
+  display: flex;
+  flex-direction: row;
+}
+
+/* addNewPatient.css */
+
+.custom-modal {
+  width: 100%;
+  max-width: none;
+  margin: auto;
+}
+
+/* .custom-modal .modal-content {
+  height: 50%;
+  width: 100%;
+} */
+
+.AddPatientHeader {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.AddPatientBody {
+  margin: 1rem;
+}
+
+.modal-dialog {
+  min-width: 60%;
+}
+.AddPatientBTN {
+  height: 40px;
+  padding: 6px 40px 6px 40px;
+  border: 1px solid #808080;
+  background-color: white;
+}
+
+.np-mail-otp input.form-control {
+  width: 147px;
+  font-size: 0.7rem;
+  height: 40px;
+}
+
+.np-mobile-otp input.form-control {
+  width: 100px;
+  font-size: 0.7rem;
+  height: 40px;
+}
+
+.np-modal button {
+  width: auto !important;
+  padding: 0 20px;
+}
+
+/* .AddPatientFooter .np-buttonbar{
+  margin: 1.25rem;
+} */
+
+.np-buttonbar {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .np-patient-name input {
+    height: 40px;
+    margin: 13px 0 0;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: solid 1px #808495;
+    background-color: #ffffff;
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .np-mail-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .np-mobile-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .np-mail-otp,
+  .np-mobile-otp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .np-mail-otp input.form-control {
+    width: 100%;
+  }
+  .np-mail-label {
+    width: 100%;
+  }
+  .np-mail-input,
+  .np-mobile-input {
+    width: 100%;
+  }
+
+  .AddPatientVerifyBTN {
+    margin-top: 1rem;
+  }
+}

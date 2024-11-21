@@ -1,0 +1,5 @@
+.mp-nav-div--selected {
+    border-radius: 5px;
+    background-color: #205fbf;
+    color: white !important;
+}

@@ -1,0 +1,84 @@
+.mp-drug-parent {
+  display: block;
+  border-radius: 4px;
+  margin-top: 30px;
+  border: 1px solid #dad9d9;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+
+.dp-title {
+  margin-top: 25px;
+  height: 45px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  color: #205fbf;
+}
+.dp-parent {
+  border: solid 1px #bfbfbf;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.tp-parent {
+  border: solid 1px #bfbfbf;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.dp-header,
+.tp-header {
+  font-size: 0.8rem;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  color: #205fbf;
+  position: relative;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.dp-header .icons {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.tp-header .icons {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.dp-header .icons:first-of-type {
+  right: 30px;
+}
+
+.dp-header .icons:last-child {
+  right: 0px;
+}
+
+.tp-body-row {
+  opacity: 0.5;
+  display: flex;
+  color: #272727;
+  font-size: 0.8rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.dp-body-row {
+  opacity: 0.5;
+  display: flex;
+  color: #272727;
+  font-size: 0.8rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+@media screen and (max-width: 650px) {
+  .mp-drug-parent {
+    display: none;
+  }
+}

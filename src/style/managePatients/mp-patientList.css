@@ -1,0 +1,144 @@
+.app-container {
+  height: 100%;
+  background-color: #f2f5f7;
+}
+
+.mp-patient-tile {
+  display: flex;
+  width: 47%;
+  margin: 15px;
+  height: 160px;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.mp-patient-tile-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mp-tile-empty {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.mp-tile-data {
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mp-user-img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.mp-tile-icon {
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  color: lightgray;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.mp-user-data {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.mp-user {
+  color: #4d4f5c;
+  font-size: 1.2rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.mp-mobile,
+.mp-country {
+  opacity: 0.5;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #43425d;
+  cursor: pointer;
+}
+
+.mp-patient-tiles-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-pt-searchbar {
+  display: flex;
+}
+
+.mp-pt-searchbar .label-basic {
+  padding: 15px 0 0 15px;
+  padding-right: 0px;
+  color: #606060;
+  font-size: 1.5rem;
+}
+
+.mp-pt-searchbar-input {
+  padding: 15px 0 0;
+  flex-grow: 1;
+}
+
+.mp-pt-searchbar-input input.form-control {
+  width: 80%;
+  margin-left: 15px;
+  color: #a9aca9;
+  font-size: 0.7rem;
+  height: 40px;
+}
+
+.mp-pt-searchbar-input .label-basic {
+  font-weight: normal;
+  font-size: 0.8rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .mp-patient-tile {
+    display: flex;
+    width: 100%;
+    margin: 15px;
+    height: 160px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+    position: relative;
+  }
+  .mp-user {
+    color: #4d4f5c;
+    font-size: 0.8rem;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  .mp-tile-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mp-patient-tile {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}

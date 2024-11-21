@@ -1,0 +1,66 @@
+.settings-container {
+  display: flex;
+  height: auto;
+  background-color: #f2f5f7;
+}
+
+.sub-left-menu {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 8px;
+  width: 20%;
+  border: 1px solid #70707033;
+  height: 631px;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.menu-item.active {
+  background-color: #edf4fd;
+}
+
+.menu-item:hover:not(.active) {
+  background-color: #edf4fd;
+}
+
+.menu-item.active::after,
+.menu-item:hover:not(.active)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  background-color: #0e57c4;
+}
+
+.main-content {
+  margin: 1rem 1rem 1rem 0rem;
+  width: 80%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .settings-container {
+    flex-direction: column;
+  }
+  .sub-left-menu {
+    height: auto;
+    width: 100%;
+    margin: 0.6rem 0rem;
+  }
+  .main-content {
+    width: 100%;
+    margin: 0.2rem 0rem 0rem 0rem;
+  }
+  .Sub-Profile > h6 {
+    font-size: 0.8rem;
+  }
+}

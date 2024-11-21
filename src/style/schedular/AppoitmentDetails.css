@@ -1,0 +1,36 @@
+.custom-select-priority {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background-image: none; /* Remove default arrow icon */
+  background-color: transparent; /* Set background color as transparent */
+  padding: 0px 12px;
+}
+
+.custom-select-priority option {
+  color: black; /* Default text color */
+}
+
+.custom-select-priority option::before {
+  content: "\2022"; /* Bullet character */
+  margin-right: 0.5em; /* Adjust margin as needed */
+}
+
+/* Change bullet color for each priority */
+.custom-select-priority option[value="0"]::before {
+  color: #ff9241; /* Normal priority */
+}
+
+.custom-select-priority option[value="1"]::before {
+  color: #206fbf; /* Low priority */
+}
+
+.custom-select-priority option[value="2"]::before {
+  color: #e3ad33; /* Medium priority */
+}
+
+.custom-select-priority option[value="3"]::before {
+  color: #d64522; /* High priority */
+}

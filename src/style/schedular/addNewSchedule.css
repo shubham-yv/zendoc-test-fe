@@ -1,0 +1,121 @@
+.new-schedule-header {
+  color: #606060;
+  font-size: 1.5rem;
+  font-family: var(--font-familyNue);
+}
+
+.new-schedule-header > label,
+.ns-title-parent > label,
+.ns-date-parent > label,
+.ns-starttime-parent > label,
+.ns-endtime-parent > label,
+.ns-msg-parent > label,
+.ns-patient-email > label,
+.ns-patient-number > label {
+  color: #254069;
+  font-family: HelveticaNeue;
+}
+.ns-date-parent {
+  margin-right: 1rem;
+}
+.ns-starttime-parent {
+  margin-right: 1rem;
+}
+
+.label-Appointment {
+  color: #808495;
+  font-size: 0.8rem;
+}
+
+.Priority-Select {
+  margin-right: 1rem;
+  padding: 0.4rem;
+}
+
+.Start-Consulting-Schedule-BTN {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: #ff9241;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 0.6rem;
+}
+
+.new-schedule-buttonbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.new-schedule-buttonbar button {
+  margin: 0 10px;
+  width: 150px !important;
+}
+
+.modal-dialog.new-schedule-modal {
+  color: #606060;
+  width: 100%;
+  max-width: unset !important;
+}
+
+.new-schedule-body {
+  font-family: var(--font-familyNue);
+}
+
+.new-schedule-body .label-basic {
+  font-size: 1rem;
+}
+
+.ns-msg-parent {
+  margin-left: 0.4rem;
+}
+
+.new-schedule-body > div {
+  margin: 20px 0;
+}
+
+.css-julti5-MuiSwitch-root {
+  margin-top: -0.4rem;
+}
+
+.ns-time-parent {
+  width: 100% !important;
+  display: flex;
+}
+
+/* .ns-time-parent > div {
+  margin-left: 0.2rem;
+} */
+
+.ns-AddNewScheduleProfile {
+  display: flex;
+  gap: 0.6rem;
+  color: #1e64cc;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 768px) {
+  .new-schedule-body > div {
+    width: auto;
+  }
+  .new-schedule-body .label-basic {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-dialog.new-schedule-modal {
+    color: #606060;
+    width: 60%;
+    max-width: unset !important;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .ns-time-parent {
+    flex-direction: column;
+  }
+}

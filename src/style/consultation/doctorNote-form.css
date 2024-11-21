@@ -1,0 +1,262 @@
+.dnf-body {
+  font-family: var(--font-familyNue);
+}
+.dnf-header-text {
+  font-size: 1.4rem;
+  color: #254069;
+  font-family: HelveticaNeue;
+}
+.dnf-body .label-basic {
+  color: #606060;
+  font-size: 1rem;
+}
+
+.dnf-body input {
+  font-size: 0.8rem;
+}
+
+.dis-input-gr {
+  display: flex;
+}
+
+.dis-input-guardian {
+  width: 50%;
+  padding: 10px 15px;
+}
+
+@font-face {
+  font-family: HelveticaNeueMedium;
+  src: url("../Font/HelveticaNeueMedium.otf");
+}
+
+.Common_Note_Headings {
+  color: #254069;
+  font-family: HelveticaNeueMedium;
+}
+
+.dis-input-rel {
+  width: 50%;
+  padding: 10px 15px;
+}
+
+.dis-input-illness {
+  display: flex;
+}
+
+.dis-input-illness-type {
+  width: 50%;
+  padding: 10px 15px;
+}
+
+.dis-input-illness-dur {
+  width: 50%;
+  padding: 10px 15px;
+}
+
+.illness-duration-selects {
+  display: flex;
+}
+.flex-grow-1 {
+  font-size: 0.8rem;
+}
+.illness-duration-selects input {
+  width: 50%;
+}
+
+.dnc-complaints,
+.dnc-history,
+.dnc-diagnosis,
+.dnc-pe,
+.dnc-persona,
+.dnc-past-history {
+  border-top: 1px solid #dfdddd;
+  margin: 0px 10px 22px 10px;
+  padding-top: 15px;
+}
+
+.dnc-diagnosis6 {
+  margin: 0px 10px 22px 10px;
+  padding-top: 15px;
+}
+
+.dnc-pe-parent .label-basic {
+  font-size: 0.8rem !important;
+}
+.labelA {
+  color: #254069;
+}
+.accordion-arrow {
+  margin-left: 5px;
+  font-size: 2rem;
+  color: #254069;
+}
+.dnc-pe-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dnc-pe-parent {
+  display: flex;
+}
+
+.doctornote-inputfooter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.doctornote-inputfooter button {
+  margin: 0 10px;
+}
+
+.dn-body-number-parent {
+  display: flex;
+}
+
+.dn-body-number {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #205fbf;
+  color: white;
+  font-size: 0.75rem;
+  margin-right: 15px;
+  margin-left: 0.7rem;
+}
+.dn-body-number-sub2 {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #205fbf;
+  color: white;
+  font-size: 0.75rem;
+  margin-right: 15px;
+  margin-left: 0.5rem;
+}
+.dn-body-number-sub {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #205fbf;
+  color: white;
+  font-size: 0.75rem;
+  margin-right: 15px;
+}
+.dn-body-number-sub-mse {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #205fbf;
+  color: white;
+  font-size: 0.75rem;
+  margin-right: 15px;
+}
+
+.form-control::placeholder {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1160px) {
+  .dis-input-gr {
+    flex-direction: column;
+  }
+  .dis-input-guardian {
+    width: 100%;
+  }
+  .dis-input-rel {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .dis-input-gr {
+    flex-direction: column;
+  }
+  .dis-input-guardian {
+    width: 100%;
+  }
+  .dis-input-rel {
+    width: 100%;
+  }
+  .dis-input-illness-type {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .dis-input-illness-dur {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .dis-input-illness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .doctornote-inputfooter button {
+    font-size: 0.8rem;
+  }
+  .dn-body-number-sub-mse {
+    width: 44px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .dnf-body .label-basic {
+    color: #606060;
+    font-size: 0.8rem;
+  }
+  .dn-body-number-sub-mse {
+    width: 30px;
+  }
+  .labelA {
+    font-size: 0.8rem;
+  }
+  .dnf-header-text {
+    font-size: 0.9rem;
+  }
+  .Common_Note_Headings {
+    font-size: 0.9rem;
+  }
+  .dnf-body input {
+    font-size: 0.6rem;
+  }
+  .form-control::placeholder {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .dis-input-guardian {
+    margin-top: 0.4rem;
+  }
+}
+
+/* @media (max-width: 394px) {
+  .custom-flex-column {
+    align-items: center;
+  }
+  .dn-body-number-parent{
+   flex-direction: column;
+   align-items: baseline;
+  }
+  .dnf-body .label-basic {
+    color: #606060;
+    font-size: 0.8rem;
+  }
+  .dnf-body {
+    width: 100%;
+  }
+} */

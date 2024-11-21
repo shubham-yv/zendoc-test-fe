@@ -1,0 +1,188 @@
+.blue-button {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #205fbf;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px !important;
+}
+
+.orange-button {
+  width: 140px;
+  height: 40px;
+  margin: 0 0 0 15px;
+  border-radius: 5px;
+  background-color: #ff9241;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px !important;
+}
+
+.transparent-button--blue {
+  border: solid 1px #205fbf;
+  color: #205fbf;
+}
+
+.button-basics {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.large-button {
+  height: 50px;
+  border-radius: 5px;
+}
+
+.avg-button {
+  height: 40px;
+  border-radius: 4px;
+}
+
+.medium-button {
+  height: 30px;
+  border-radius: 4px;
+}
+
+.small-button {
+  height: 25px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  width: auto !important;
+  padding: 16px 26px;
+}
+
+.label-basic {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.label-date {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: #272727;
+}
+
+.gray-label {
+  color: var(--label-text) !important;
+  font-size: 0.7rem !important;
+}
+
+.image-basic {
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.anchor-basic {
+  color: #205fbf !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.zenquip-select .MuiSelect-select {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+  color: #0f302f;
+}
+
+.zenquip-select li {
+  font-size: 0.8rem;
+}
+
+.zenquip-select .MuiInputLabel-root {
+  top: -8px;
+  font-size: 0.8rem;
+  color: #0f302f;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.halfWidth {
+  width: 50%;
+}
+
+.zqhide {
+  display: none;
+}
+
+.numWidth {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.width30pc {
+  width: 30%;
+}
+
+.width15pc {
+  width: 15%;
+}
+
+.width55pc {
+  width: 55%;
+}
+
+.header-basic {
+  font-size: 0.85rem;
+  margin: 0.75rem 0;
+}
+
+.blue-border {
+  border: 1px solid #0e58c7;
+}
+
+.no-border-btn {
+  border: 0px solid;
+}
+
+.gray-label-medium {
+  color: var(--label-text) !important;
+  font-size: 0.9rem !important;
+}
+
+.flex-display {
+  display: flex;
+  justify-content: center;
+}
+
+.gray-border {
+  border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.info-label {
+  font-size: 0.7rem !important;
+}

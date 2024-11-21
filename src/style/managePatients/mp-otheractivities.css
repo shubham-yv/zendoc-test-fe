@@ -1,0 +1,74 @@
+.Other-Activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.OCD,
+.DeAddict,
+.Phobia,
+.Depression {
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+.Common-Activity-Container {
+  height: auto;
+  width: 100%;
+}
+.Common-Tracking {
+  display: flex;
+  justify-content: space-between;
+}
+.Common-Container-Content {
+  text-align: left;
+  color: #000000;
+}
+.Common-Container-Content > h5 {
+  color: #102646;
+  font-weight: 600;
+}
+.Common-Container-label {
+  color: #a5a5a5;
+  font-size: 0.9rem;
+}
+.Common-Activity-Container-Sub-Content {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 90%;
+}
+.circle-otherActivity {
+  width: 100px;
+  height: 100px;
+  margin-right: 0.5rem;
+}
+@media screen and (max-width: 1256px) {
+  .Other-Activities {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .Other-Activities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 670px) {
+  .Other-Activities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 406px) {
+  .Other-Activities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Common-Container-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Common-Tracking {
+    align-items: center;
+    flex-direction: column;
+  }
+}

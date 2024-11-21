@@ -1,0 +1,88 @@
+.Guardian-Container {
+  border-top: 1px solid #70707021;
+}
+.Guardian-Container-Sub1 {
+  display: flex;
+  gap: 5rem;
+}
+.Guardian-Container-Sub2 {
+  display: flex;
+  gap: 6.6rem;
+}
+.PsycNote {
+  border-top: 1px solid #70707021;
+  border-bottom: 1px solid #70707021;
+}
+.dn-body-number-parent2 {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.dn-body-number-parent3 {
+  display: flex;
+}
+.PsycNote-P {
+  margin-left: 3rem;
+}
+.Psyco-Note-label {
+  color: #254069;
+  font-weight: 600;
+}
+.PsycNoteLi {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 1rem;
+  color: #808495;
+}
+.PsycNoteLi2 {
+  color: #808495;
+}
+.PsycNoteLi p:nth-child(3) {
+  color: #254069;
+}
+.label-basic-psych {
+  color: #606060;
+  font-size: 0.8rem;
+}
+
+.IMAX {
+  display: flex;
+  gap: 5rem;
+  margin-left: 2.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Guardian-Container-Sub1,.Guardian-Container-Sub2 {
+    font-size: 0.9rem;
+  }
+  .PsycNote {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .dn-body-number-parent3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Guardian-Container-Sub1, .Guardian-Container-Sub2 {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .PsycNoteLi{
+    flex-direction: column;
+    margin-left: 0rem;
+  }
+  .PsycNoteLi p:nth-child(2) {
+   display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .PsycNote {
+    font-size: 0.8rem;
+  }
+  .UL2{
+    font-size: .8rem;
+  }
+}

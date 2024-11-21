@@ -1,0 +1,90 @@
+.custom-day-header {
+  width: 25%; /* Style for day view */
+}
+
+.custom-week-header {
+  width: 100%; /* Style for week view */
+}
+
+.sc-body {
+  padding: 10px;
+}
+/* 
+.sc-body .fc-header-toolbar{
+    font-weight: 500;
+    color: #606060;
+    font-family: var(--font-familyNue);
+}
+
+
+
+.sc-body .fc-today-button { 
+    font-size: 1rem;
+} */
+
+.sc-body .fc-toolbar-title {
+  font-size: 1rem;
+  color: #272727 !important;
+}
+
+.sc-header {
+  color: #272727;
+  padding: 10px 0 0 10px;
+  font-size: 0.85rem;
+}
+
+.sc-body .fc-dayGridMonth-button,
+.sc-body .fc-timeGridWeek-button,
+.sc-body .fc-timeGridDay-button,
+.sc-body .fc-today-button {
+  text-transform: capitalize !important;
+  background-color: white !important;
+  border: 1px solid #d7dae2 !important;
+  color: #272727 !important;
+  font-size: 0.85rem !important;
+  padding: 0.5rem !important;
+}
+
+.sc-body .fc-button-active {
+  outline: none !important;
+  color: #205fbf !important;
+}
+
+.sc-body .fc-prev-button,
+.sc-body .fc-next-button {
+  background-color: white !important;
+  border: 1px solid lightgray !important;
+}
+
+.sc-body .fc-prev-button .fc-icon,
+.sc-body .fc-next-button .fc-icon {
+  color: #272727;
+}
+
+.sc-body a {
+  color: #43425d;
+}
+
+.sc-body .fc-col-header-cell-cushion {
+  font-weight: normal !important;
+}
+
+.sc-body th.fc-col-header-cell.fc-day {
+  background-color: var(--fc-border-color, #ddd) !important;
+}
+
+.sc-body .fc .fc-daygrid-day.fc-day-today {
+  background-color: var(--fc-border-color, #ddd) !important;
+}
+
+.fc .fc-toolbar {
+  display: inline-block;
+}
+
+@media screen and (min-width: 525px) {
+  .fc .fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
