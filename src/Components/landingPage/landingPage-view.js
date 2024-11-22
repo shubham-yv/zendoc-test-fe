@@ -177,7 +177,7 @@ const LandingPage = ({ addNewPatientFlag, getPatientList }) => {
         history.push('/schedule-calender');
         break;
       case 3:
-        history.push('');
+        history.push('/manage-patients');
         break;
       case 4:
         history.push('/notifications');
@@ -192,8 +192,7 @@ const LandingPage = ({ addNewPatientFlag, getPatientList }) => {
         history.push('/profile');
         break;
       case 'help':
-        // history.push('/help')
-        // TODO: add <Help /> component
+        history.push('/help');
         break;
       default:
         break;

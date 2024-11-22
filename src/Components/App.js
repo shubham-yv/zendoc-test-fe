@@ -150,16 +150,9 @@ const App = () => {
                             <Route path="/" exact component={Auth} />
                             <Route path="/signup" exact component={SignUp} />
                             <Route path="/forgot" exact component={ForgotPasswordPage} />
-                            <PrivateRoute path="/dashboard" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/schedule-calender" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/manage-patients" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/notifications" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/tools" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/blogs" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/profile" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/consultation" exact component={LandingPageContainer} />
-                            <PrivateRoute path="/help" exact component={LandingPageContainer} />
                             <PrivateRoute path="/onboard" exact component={Onboard} />
+                            <PrivateRoute path="/dashboard" exact component={LandingPageContainer} />
+                            <PrivateRoute path="/:activeTab" exact component={LandingPageContainer} />
                             <Redirect to="/" />
                         </Switch>
                     </div>
