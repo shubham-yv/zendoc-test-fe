@@ -82,6 +82,8 @@ import '../../style/landingPage/leftMenu.css';
 const LeftMenu = ({ menuItemClickHandler, activeTab }) => {
     const history = useHistory();
 
+    console.log("Active Tab in leftMenu:::", activeTab);
+
     const handleMenuItemClick = (event) => {
         const name = event.currentTarget.getAttribute('data-name');
         menuItemClickHandler(name);
@@ -113,42 +115,42 @@ const LeftMenu = ({ menuItemClickHandler, activeTab }) => {
                 <div
                     data-name='2'
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--schedule ${activeTab === '2' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--schedule ${activeTab === 'schedule-calender' ? 'active' : ''}`}
                 >
                     <div className='left-menu-item-text'>Schedule</div>
                 </div>
                 <div
                     data-name='3'
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--patients ${activeTab === '3' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--patients ${activeTab === 'manage-patients' ? 'active' : ''}`}
                 >
                     <div className='left-menu-item-text'>Patients</div>
                 </div>
                 <div
                     data-name='4'
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--Appointments ${activeTab === '4' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--Appointments ${activeTab === 'notifications' ? 'active' : ''}`}
                 >
                     <div className='left-menu-item-text'>Appointments</div>
                 </div>
                 <div
                     data-name='5'
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--Tools ${activeTab === '5' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--Tools ${activeTab === 'tools' ? 'active' : ''}`}
                 >
                     <div className='left-menu-item-text'>Tools</div>
                 </div>
                 <div
                     data-name='6'
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--blog ${activeTab === '6' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--blog ${activeTab === 'blogs' ? 'active' : ''}`}
                 >
                     <div className='left-menu-item-text'>Blog</div>
                 </div>
                 <div
                     data-name='7'
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--settings ${activeTab === '7' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--settings ${activeTab === 'profile' ? 'active' : ''}`}
                 >
                     <div className='left-menu-item-text'>Settings</div>
                 </div>

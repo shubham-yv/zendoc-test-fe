@@ -41,8 +41,10 @@
 // export default LandingPageContainer;
 
 
+
+
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useHistory } from 'react-router-dom';
 import LandingPage from './landingPage-view';
 import { setActiveTab } from '../../Actions/landingPage';
@@ -54,6 +56,7 @@ const LandingPageContainer = () => {
     const { pathname } = useLocation();
     const history = useHistory();
     const dispatch = useDispatch();
+    const activetab = useSelector(state => state.activetab);
     const [initialLoad, setInitialLoad] = useState(true);
 
     useEffect(() => {
@@ -61,15 +64,17 @@ const LandingPageContainer = () => {
             setInitialLoad(false);
         }
 
-        const activeTab = pathname.split('/')[1];
-        if (activeTab) {
-            dispatch(setActiveTab(activeTab));
+        const newActiveTab = pathname.split('/')[1];
+        if (newActiveTab && newActiveTab !== activetab) {
+            dispatch(setActiveTab(newActiveTab));
         }
-    }, [pathname, dispatch, initialLoad]);
+    }, [pathname, activetab, dispatch, initialLoad]);
 
     const handleTileClick = (tileId) => {
         history.push(`/${tileId}`);
     };
+
+    console.log("Active Tab:::", activetab);
 
     return (
         <>
@@ -77,11 +82,15 @@ const LandingPageContainer = () => {
                 <LandingPage />
             ) : (
                 <div className="component-container">
-                    <Header />
+                    <div className="component-header">
+                        <Header activeTab={activetab} />
+                    </div>
                     <div className="component-body">
-                        <LeftMenu menuItemClickHandler={handleTileClick} />
+                        <LeftMenu menuItemClickHandler={handleTileClick} activeTab={activetab} />
                         <div className="component-page-container">
-                            <LoadComponentPage route={pathname} />
+                            <div>
+                                <LoadComponentPage route={pathname} activeTab={activetab} />
+                            </div>
                         </div>
                     </div>
                 </div>
