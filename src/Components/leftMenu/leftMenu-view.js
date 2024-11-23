@@ -1,166 +1,96 @@
-// import React from 'react';
-// import '../../style/landingPage/leftMenu.css';
-
-// const LeftMenu = ({ menuItemClickHandler, activeTab }) => {
-//     const handleMenuItemClick = (event) => {
-//         const name = event.currentTarget.getAttribute('data-name');
-//         menuItemClickHandler(name);
-//     };
-
-//     return (
-//         <div className='left-menu'>
-//             <div className='left-menu-icon-container'>
-//                 <div
-//                     data-name=''
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--home ${activeTab === '' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Home</div>
-//                 </div>
-//                 <div
-//                     data-name='2'
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--schedule ${activeTab === '2' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Schedule</div>
-//                 </div>
-//                 <div
-//                     data-name='3'
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--patients ${activeTab === '3' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Patients</div>
-//                 </div>
-//                 <div
-//                     data-name='4'
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--Appointments ${activeTab === '4' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Appointments</div>
-//                 </div>
-//                 <div
-//                     data-name='5'
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--Tools ${activeTab === '5' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Tools</div>
-//                 </div>
-//                 <div
-//                     data-name='6'
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--blog ${activeTab === '6' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Blog</div>
-//                 </div>
-//                 <div
-//                     data-name='7'
-//                     onClick={handleMenuItemClick}
-//                     className={`left-menu__item left-menu__item--settings ${activeTab === '7' ? 'active' : ''}`}
-//                 >
-//                     <div className='left-menu-item-text'>Settings</div>
-//                 </div>
-//             </div>
-//             <div
-//                 data-name='help'
-//                 onClick={handleMenuItemClick}
-//                 className={`left-menu__item left-menu__item--help ${activeTab === 'help' ? 'active' : ''}`}
-//             >
-//                 <div className='left-menu-item-text'>Help</div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default LeftMenu;
-
-
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import '../../style/landingPage/leftMenu.css';
 
 const LeftMenu = ({ menuItemClickHandler, activeTab }) => {
     const history = useHistory();
 
-    console.log("Active Tab in leftMenu:::", activeTab);
+    useEffect(() => {
+        // You could use this effect to handle any side-effects if needed
+    }, [activeTab]);
 
     const handleMenuItemClick = (event) => {
         const name = event.currentTarget.getAttribute('data-name');
-        menuItemClickHandler(name);
+        if (menuItemClickHandler) {
+            menuItemClickHandler(name);
+        }
 
         const routeMapping = {
             '': '/dashboard',
-            '2': '/schedule-calender',
-            '3': '/manage-patients',
-            '4': '/notifications',
-            '5': '/tools',
-            '6': '/blogs',
-            '7': '/profile',
-            'help': '/help'
+            '2': '/schedule',
+            '3': '/managepatients',
+            '4': '/notification',
+            '5': '/drugtool',
+            '6': '/blog',
+            '7': '/setting',
+            'help': '/help',
         };
 
-        history.push(routeMapping[name]);
+        const route = routeMapping[name];
+        if (route) {
+            history.push(route);
+        }
     };
 
     return (
-        <div className='left-menu'>
-            <div className='left-menu-icon-container'>
+        <div className="left-menu">
+            <div className="left-menu-icon-container">
                 <div
-                    data-name=''
+                    data-name=""
                     onClick={handleMenuItemClick}
                     className={`left-menu__item left-menu__item--home ${activeTab === '' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Home</div>
+                    <div className="left-menu-item-text">Home</div>
                 </div>
                 <div
-                    data-name='2'
+                    data-name="2"
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--schedule ${activeTab === 'schedule-calender' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--schedule ${activeTab === '2' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Schedule</div>
+                    <div className="left-menu-item-text">Schedule</div>
                 </div>
                 <div
-                    data-name='3'
+                    data-name="3"
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--patients ${activeTab === 'manage-patients' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--patients ${activeTab === '3' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Patients</div>
+                    <div className="left-menu-item-text">Patients</div>
                 </div>
                 <div
-                    data-name='4'
+                    data-name="4"
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--Appointments ${activeTab === 'notifications' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--Appointments ${activeTab === '4' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Appointments</div>
+                    <div className="left-menu-item-text">Appointments</div>
                 </div>
                 <div
-                    data-name='5'
+                    data-name="5"
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--Tools ${activeTab === 'tools' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--Tools ${activeTab === '5' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Tools</div>
+                    <div className="left-menu-item-text">Tools</div>
                 </div>
                 <div
-                    data-name='6'
+                    data-name="6"
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--blog ${activeTab === 'blogs' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--blog ${activeTab === '6' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Blog</div>
+                    <div className="left-menu-item-text">Blog</div>
                 </div>
                 <div
-                    data-name='7'
+                    data-name="7"
                     onClick={handleMenuItemClick}
-                    className={`left-menu__item left-menu__item--settings ${activeTab === 'profile' ? 'active' : ''}`}
+                    className={`left-menu__item left-menu__item--settings ${activeTab === '7' ? 'active' : ''}`}
                 >
-                    <div className='left-menu-item-text'>Settings</div>
+                    <div className="left-menu-item-text">Settings</div>
                 </div>
             </div>
             <div
-                data-name='help'
+                data-name="help"
                 onClick={handleMenuItemClick}
                 className={`left-menu__item left-menu__item--help ${activeTab === 'help' ? 'active' : ''}`}
             >
-                <div className='left-menu-item-text'>Help</div>
+                <div className="left-menu-item-text">Help</div>
             </div>
         </div>
     );

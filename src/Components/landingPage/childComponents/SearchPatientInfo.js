@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
+import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setSelectedPatient } from '../../../Actions/consultation';
 
 const SearchPatientInfo = (props) => {
     const { onSelectPatient } = props;
     const userRef = useRef(null);
+    const history = useHistory();
 
     const getAge = (dateString) => {
         var today = new Date();
@@ -20,6 +22,7 @@ const SearchPatientInfo = (props) => {
     const selectUser = (event) => {
         props.setSelectedPatient(userRef.current.getAttribute("id"));
         onSelectPatient(props.patient.patientid);
+        history.push(`/patient/${props.patient.patientid}`);
     };
 
     return (

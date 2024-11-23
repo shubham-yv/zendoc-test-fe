@@ -39,9 +39,8 @@ function Header({ menuItemClickHandler, activeTab }) {
 
     fetchData();
 
-    // Cleanup function to run when the component unmounts
     return () => {
-      isMounted = false; // Update the flag to indicate unmounting
+      isMounted = false; 
     };
   }, []);
 
